@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate</title>
+  <link href="../../assets/styles/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../donate/style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper-section-header">
+    <section class="header">
+      <div class="header-wrapper">
+        <div class="header-logo">
+          <a class="logo-link" href="http:##!">
+            <h1 class="logo-text">PetStory<br>online</h1>
+            <img class="logo-pic" src="../../assets/icons/bamboo.svg" alt="icon">
+          </a>
+        </div>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="../../pages/main/index.html" class="header-link">About</a>
+            </li>
+            <li class="header-item">
+              <a href="##!" class="header-link">Map</a>
+            </li>
+            <li class="header-item">
+              <a href="##!" class="header-link">Zoos</a>
+            </li>
+            <li class="header-item">
+              <a href="../../pages/donate/index.html" class="header-link">Donate</a>
+            </li>
+            <li class="header-item">
+              <a href="##!" class="header-link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="designed">
+          <a class="designed-text" href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks">
+            Designed by ©</a>
+        </div>
+        <div class="header-burger burger">
+          <span class="burger-line burger-line_one"></span>
+          <span class="burger-line burger-line_two"></span>
+          <span class="burger-line burger-line_three"></span>
+        </div>
+      </div>
+    </section>
+    <section class="watch-your-favorite">
+    </section>
+  </div>
+
+  <section class="donation">
+    <div class="donation-wrapper">
+      <div class="donation-title">
+        THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
+      </div>
+      <div class="donation-subtitle">
+        Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and
+        public and private events cancelled or postponed for additional months. We need you now more than ever to help
+        ensure that we overcome these challenges. We have been actively raising funds in the community, and we are
+        grateful for the generosity. But much more support is still needed, and we need your help! Please consider a
+        gift today – no matter what size – to help us sustain our mission.
+      </div>
+      <div class="donation-information-text">
+        Donation Information
+      </div>
+      <div class="donation-wrap-block">
+        <div class="donation-wrapper-block-title">
+          Pick and feed a friend
+        </div>
+        <div class="donation-wrapper-block-subtitle">
+          We know the animals bring you joy, and in these extraordinary times, we’re glad.
+        </div>
+        <div class="donation_panda">
+          <div class="donation-panda-diet">
+            <img class="donation-panda_4-icon" src="../../assets/icons/amount_of_days_donate.png" alt="pic">
+            <div class="donation-panda-diet-text">
+              Panda diet for the day.
+            </div>
+          </div>
+          <div class="donation-panda_x-icon">
+            <img src="../../assets/icons/x_icon.svg" alt="pic">
+          </div>
+          <div class="donation-panda-pic">
+            <img class="panda-pic-size" src="../../assets/icons/animals-widget.png" alt="pic">
+          </div>
+        </div>
+        <div class="donation-amount-text">
+          Amount
+        </div>
+        <div id="form-wrapper">
+          <form>
+            <div id="debt-amount-slider">
+              <label class="debt-amount-slider-1" for="1" data-debt-amount="$5000">
+                <input type="radio" name="debt-amount" id="1" value="1" required="">
+              </label>
+              <label for="2" data-debt-amount="$2000">
+                <input type="radio" name="debt-amount" id="2" value="2" required="">
+              </label>
+              <label for="3" data-debt-amount="$1000">
+                <input type="radio" name="debt-amount" id="3" value="3" required="">
+              </label>
+              <label for="4" data-debt-amount="$500">
+                <input type="radio" name="debt-amount" id="4" value="4" required="">
+              </label>
+              <label for="5" data-debt-amount="$250">
+                <input type="radio" name="debt-amount" id="5" value="5" required="">
+              </label>
+              <label for="6" data-debt-amount="$100">
+                <input type="radio" name="debt-amount" id="6" value="6" required="">
+              </label>
+              <label for="7" data-debt-amount="$50">
+                <input type="radio" name="debt-amount" id="7" value="7" required="">
+              </label>
+              <label for="8" data-debt-amount="$25">
+                <input type="radio" name="debt-amount" id="8" value="8" required="">
+              </label>
+              <div id="debt-amount-pos"></div>
+            </div>
+          </form>
+        </div>
+        <div class="donation-amount-another">
+          <input class="amount-input" type="number" onkeypress="this.value=this.value.substring(0,3);"
+            placeholder="Another amount">
+        </div>
+        <div class="checkbox">
+          <div class="radio">
+            <input id="radio-1" name="radio" type="radio" checked>
+            <label for="radio-1" class="radio-label">Monthly</label>
+          </div>
+          <div class="radio">
+            <input id="radio-2" name="radio" type="radio" checked>
+            <label for="radio-2" class="radio-label">Once</label>
+          </div>
+        </div>
+        <button class="donation-button button-link">
+          Feed a friend now
+        </button>
+        <div class="donation-share">
+          Share with your friends on social networks
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="header-logo footer-logo">
+        <a class="logo-link footer-logo-link" href="http:##!">
+          <h1 class="logo-text logo-text-footer">PetStory<br>online</h1>
+          <img class="logo-pic" src="../../assets/icons/bamboo.svg" alt="icon">
+        </a>
+      </div>
+      <form class="footer-input" action="">
+        <label class="input-label" for="input-your-email">Subscribe to our news</label>
+        <input class="input-your-email" type="email" name="email" placeholder="Enter your email">
+        <button type="button" name="" class="footer-btn-email">
+          <p class="btn-email-text">Submit
+        </button>
+      </form>
+    </div>
+    <form class="btn-donate-wrapper" action="../../pages/donate/idex.html">
+      <button type="submit" class="button-feedback btn-donate button-link">
+        <p class="button-testimonials-text">donate for volunteers
+      </button>
+    </form>
+    <div class="footer-wrapper-nav">
+      <div class="social-contact">
+        <div class="contact-list">
+          <a class="social-contact-go" href="https://www.facebook.com/">
+            <p class="pic-bak-one">
+              <img class="contact-pic" src="../../assets/icons/Fill 211.svg" alt="Facebook">
+            </p>
+            <div class="social-contact-text">Facebook</div>
+          </a>
+          <a class="social-contact-go" href="https://twitter.com/?lang=ru">
+            <p class="pic-bak-one">
+              <img class="contact-pic" src="../../assets/icons/Fill 172.svg" alt="Twitter">
+            </p>
+            <div class="social-contact-text">Twitter</div>
+          </a>
+          <a class="social-contact-go" href="https://www.instagram.com/">
+            <p class="pic-bak-one"> <img class="contact-pic" src="../../assets/icons/Fill 166.svg" alt="Instagram"></p>
+            <span class="social-contact-text">Instagram</span>
+          </a>
+          <a class="social-contact-go" href="https://www.youtube.com/">
+            <p class="pic-bak-one"><img class="contact-pic" src="../../assets/icons/Fill 213.svg" alt="YouTube"></p>
+            <span class="social-contact-text">YouTube</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <nav class="header-nav-1">
+          <ul class="header-list footer-list">
+            <li class="header-item footer-item">
+              <a href="../../pages/main/index.html" class="header-link">About</a>
+            </li>
+            <li class="header-item  footer-item">
+              <a href="##!" class="header-link">Map</a>
+            </li>
+            <li class="header-item footer-item">
+              <a href="##!" class="header-link">Zoos</a>
+            </li>
+            <li class="header-item footer-item ">
+              <a href="##!" class="header-link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-text">
+        <a class="footer-text-link" href="http://">
+          <h3 class="footer-text-one">Designed by Alisa Samborskaya</h3>
+          <h3 class="footer-text-too">©RSSchool & ©Yem Digital 2021</h3>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
