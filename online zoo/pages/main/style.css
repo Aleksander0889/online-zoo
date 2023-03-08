@@ -10,7 +10,6 @@ body {
   background-position: center;
   margin-bottom: 100px;
 }
-
 .header {
   background-color: black;
   z-index: 10;
@@ -366,6 +365,7 @@ body {
   border-color: rgba(250, 111, 50, 1);
   border-radius: 5px;
   width: 362px;
+  overflow: hidden;
 }
 
 .pets-cards:hover .prts-pic {
@@ -517,8 +517,7 @@ body {
   margin-right: auto;
   background: rgba(253, 253, 255, 0.52);
   border-radius: 20px;
-  padding-left: 99px;
-
+  
 }
 
 .pick-and-friend-title {
@@ -542,6 +541,9 @@ body {
   color: #333B41;
   padding-top: 30px;
   margin: 0px;
+}
+.pick-friend-text {
+  padding-left: 99px;
 }
 
 .pick-and-friend-link {
@@ -711,28 +713,41 @@ body {
 
 .testimonials-wrapper-block {
   display: block;
-  max-width: 1160px;
+  max-width: 1162px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 .testimonials-wrapper {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  /* min-width: min-content; */
 }
 
 .testimonials-cards {
   position: relative;
-  width: 268px;
+  min-width: 262px;
   height: 391px;
+  margin-right: 30px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 2px;
   background: #F1F3F2;
   border-radius: 20px;
   border-width: thin;
-  /* transform: translateX(-100%); */
-  transition: 2s, all linear;
+    
+    /*  */
+}
+.testimonials-cards:last-child {
+  margin-right: 0px;
+}
 
+.testimonials-active {
+  transition: 2s, all linear;
+  /* -webkit-transform: scale(1.0); */
 }
 
 .testimonials-cards::before {
@@ -802,6 +817,7 @@ body {
   border-radius: 5px;
   border: none;
   z-index: 0;
+  margin-left: 300px;
   /* margin-bottom: 192px; */
 }
 
@@ -861,8 +877,77 @@ input[type="range"]::-webkit-slider-thumb {
 .active {
   color: #FE9013;
 }
+/*testimonials-burger"*/
+.testimonials-pupap-wrapper {
+  width: 320px;
+  height: 428px;
+  position: absolute;
+  top: 130px;  
+  background: #F5F7F6;
+  transform: translateX(-100%);
+  display: none;
+}
+
+.testimonials-pupup {
+  position: relative;
+  min-width: 262px;
+  height: 391px;
+  margin-right: 30px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  background: #F1F3F2;
+  border-radius: 20px;
+  border-width: thin;
+  
+    /*  */
+}
 
 
+.testimonials-pupup::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(290deg, #FEBDAB 20%, #F3A9F8 30%, #E0D8F0 100%, #EAF7FE 100%, #EAF7FE 100%);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+
+.testimonials-nav-close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.testimonials-nav-close-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+}
+
+.testimonials-nav-close-line:first-child {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.testimonials-nav-close-line:last-child {
+  transform: translateY(-50%) rotate(-45deg);
+}
+.testimonials-burger-active {
+  transform: translateX(0);
+}
+
+
+
+/*testimonials-burger
 /*footer style */
 
 .footer {
@@ -1083,6 +1168,9 @@ input[type="range"]::-webkit-slider-thumb {
   display: none;
 }
 
+.header-burger-active {
+  transform: translateX(0);
+}
 
 @media screen and (max-width: 1530px) {
   .backstage-pic-flower {
@@ -1164,12 +1252,16 @@ input[type="range"]::-webkit-slider-thumb {
     margin-top: 100px;
     margin-bottom: 30px;
   }
+  .testimonials-cards {
+    min-width: 292px;
+  }
+
 
   .testimonials-wrapper-block {
     position: relative;
     padding-left: 30px;
     padding-right: 30px;
-    /* width: 940px; */
+    width: 940px;
   }
 
   .pets-wrapper {
@@ -1329,6 +1421,9 @@ input[type="range"]::-webkit-slider-thumb {
       margin-bottom: 15px;
       overflow: hidden;
     }
+    #car {
+      display: none;
+    }
   }
 
   @media screen and (max-width: 826px) {
@@ -1350,8 +1445,8 @@ input[type="range"]::-webkit-slider-thumb {
     /*burger*/
     .burger-nav {
       display: block;
-      width: 640px;
-      height: 329px;
+      width: 100vw;
+      height: max-content;
       position: fixed;
       top: 0;
       left: 0;
@@ -1360,13 +1455,28 @@ input[type="range"]::-webkit-slider-thumb {
       transform: translateX(-100%);
       transition: .2s all linear;
     }
-
+    .burger-logo {
+      margin-top: 10px;
+      margin-left: 10px;
+      
+    } 
     .burger-link {
       color: #000000;
+      margin-bottom: 10px;
+    }
+    .burger-item {
+      margin-bottom: 10px;
     }
 
     .burger-list {
       display: block;
+      padding-left: 10px;
+      margin-top: 0px;
+    }
+    .burger-designed {
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
     }
 
     .header-nav {
@@ -1454,7 +1564,9 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   @media screen and (max-width: 642px) {
-
+    .testimonials-pupap-wrapper {
+      display: block;
+    }
     .header {
       position: fixed;
       width: 100%;
@@ -1636,6 +1748,7 @@ input[type="range"]::-webkit-slider-thumb {
 
     .button-feedback {
       margin-top: 40px;
+      margin-left: 20px;
     }
 
     .footer-logo {
@@ -2024,6 +2137,45 @@ input[type="range"]::-webkit-slider-thumb {
       .social-contact {
         top: 65px;
         left: 63px;
+      }
+      
+    }
+    .slider__move-left {
+      animation-name: slider-move-left;
+      animation-duration: 1.3s;
+    }
+    
+    .slider__move-right {
+      animation-name: slider-move-right;
+      animation-duration: 1.3s;
+    }
+    
+    @keyframes slider-move-left {
+      0% {
+        left: -598px;
+        filter: blur(0px);
+      }
+      50% {
+        filter: blur(5px);
+      }
+      100% {
+        left: 0;
+        filter: blur(0px);
+      }
+    }
+    
+    @keyframes slider-move-right {
+      0% {
+        left: -598px;
+        filter: blur(0px);
+      }
+      50% {
+        filter: blur(5px);
+      }
+    
+      100% {
+        left: -1196px;
+        filter: blur(0px);
       }
     }
 

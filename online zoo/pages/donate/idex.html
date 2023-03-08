@@ -35,7 +35,7 @@
               <a href="##!" class="header-link">Zoos</a>
             </li>
             <li class="header-item">
-              <a href="../../pages/donate/index.html" class="header-link">Donate</a>
+              <a href="../../pages/donate/index.html" class="header-link active">Donate</a>
             </li>
             <li class="header-item">
               <a href="##!" class="header-link">Contact us</a>
@@ -52,6 +52,43 @@
           <span class="burger-line burger-line_three"></span>
         </div>
       </div>
+
+      <div class="burger-nav">
+        <div class="header-logo">
+          <a class="logo-link" href="http:##!">
+            <h1 class="logo-text active">PetStory<br>online</h1>
+            <img class="logo-pic" src="../../assets/icons/bamboo.svg" alt="icon">
+          </a>
+        </div>
+        <nav class="burger-nav-list">
+          <ul class="header-list burger-list">
+            <li class="header-item">
+              <a href="../../pages/main/index.html" class="header-link burger-link">About</a>
+            </li>
+            <li class="header-item">
+              <a href="##!" class="header-link burger-link">Map</a>
+            </li>
+            <li class="header-item">
+              <a href="##!" class="header-link burger-link">Zoos</a>
+            </li>
+            <li class="header-item">
+              <a href="../donate/idex.html" class="header-link burger-link">Donate</a>
+            </li>
+            <li class="header-item">
+              <a href="##!" class="header-link burger-link">Contact us</a>
+            </li>
+          </ul>
+          <div class="header-nav-close">
+            <span class="header-nav-close-line"></span>
+            <span class="header-nav-close-line"></span>
+          </div>
+        </nav>
+        <div class="designed">
+          <a class="designed-text" href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks">Designed
+            by ©</a>
+        </div>
+      </div>
+
     </section>
     <section class="watch-your-favorite">
     </section>
@@ -96,37 +133,49 @@
         <div class="donation-amount-text">
           Amount
         </div>
-        <div id="form-wrapper">
-          <form>
-            <div id="debt-amount-slider">
-              <label class="debt-amount-slider-1" for="1" data-debt-amount="$5000">
-                <input type="radio" name="debt-amount" id="1" value="1" required="">
-              </label>
-              <label for="2" data-debt-amount="$2000">
-                <input type="radio" name="debt-amount" id="2" value="2" required="">
-              </label>
-              <label for="3" data-debt-amount="$1000">
-                <input type="radio" name="debt-amount" id="3" value="3" required="">
-              </label>
-              <label for="4" data-debt-amount="$500">
-                <input type="radio" name="debt-amount" id="4" value="4" required="">
-              </label>
-              <label for="5" data-debt-amount="$250">
-                <input type="radio" name="debt-amount" id="5" value="5" required="">
-              </label>
-              <label for="6" data-debt-amount="$100">
-                <input type="radio" name="debt-amount" id="6" value="6" required="">
-              </label>
-              <label for="7" data-debt-amount="$50">
-                <input type="radio" name="debt-amount" id="7" value="7" required="">
-              </label>
-              <label for="8" data-debt-amount="$25">
-                <input type="radio" name="debt-amount" id="8" value="8" required="">
-              </label>
-              <div id="debt-amount-pos"></div>
+          <div class="feed-friend__bar">
+            <div class="feed-friend__bar-circle" data-amount="5000">
+              <div class="feed-friend__bar-circle-small-echo"></div>
+              <div class="feed-friend__bar-circle-big-echo"></div>
+              <p class="feed-friend__price">$5000</p>
             </div>
-          </form>
-        </div>
+            <div class="feed-friend__bar-circle" data-amount="2000">
+              <div class="feed-friend__bar-circle-small-echo"></div>
+              <div class="feed-friend__bar-circle-big-echo"></div>
+              <p class="feed-friend__price">$2000</p>
+            </div>
+            <div class="feed-friend__bar-circle" data-amount="1000">
+              <div class="feed-friend__bar-circle-small-echo"></div>
+              <div class="feed-friend__bar-circle-big-echo"></div>
+              <p class="feed-friend__price">$1000</p>
+            </div>
+            <div class="feed-friend__bar-circle" data-amount="500">
+              <div class="feed-friend__bar-circle-small-echo"></div>
+              <div class="feed-friend__bar-circle-big-echo"></div>
+              <p class="feed-friend__price">$500</p>
+            </div>
+            <div class="feed-friend__bar-circle" data-amount="250">
+              <div class="feed-friend__bar-circle-small-echo"></div>
+              <div class="feed-friend__bar-circle-big-echo"></div>
+              <p class="feed-friend__price">$250</p>
+            </div>
+            <div class="feed-friend__bar-circle feed-friend__bar-circle_selected" data-amount="100">
+              <div class="feed-friend__bar-circle-small-echo"></div>
+              <div class="feed-friend__bar-circle-big-echo"></div>
+              <p class="feed-friend__price">$100</p>
+            </div>
+            <div class="feed-friend__bar-circle" data-amount="50">
+              <div class="feed-friend__bar-circle-small-echo"></div>
+              <div class="feed-friend__bar-circle-big-echo"></div>
+              <p class="feed-friend__price">$50</p>
+            </div>
+            <div class="feed-friend__bar-circle" data-amount="25">
+              <div class="feed-friend__bar-circle-small-echo"></div>
+              <div class="feed-friend__bar-circle-big-echo"></div>
+              <p class="feed-friend__price">$25</p>
+            </div>
+          </div>
+
         <div class="donation-amount-another">
           <input class="amount-input" type="number" onkeypress="this.value=this.value.substring(0,3);"
             placeholder="Another amount">
@@ -223,6 +272,7 @@
       </div>
     </div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
